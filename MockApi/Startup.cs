@@ -27,6 +27,14 @@ namespace MockApi
         {
             services.AddControllers();
 
+            services.AddCors(options =>
+                options.AddDefaultPolicy(builder =>
+                    builder.AllowAnyOrigin()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                )
+            );
+
             services.AddSwaggerGen();
         }
 
@@ -47,6 +55,8 @@ namespace MockApi
             app.UseHttpsRedirection();
 
             app.UseRouting();
+
+            app.UseCors();
 
             app.UseAuthorization();
 
