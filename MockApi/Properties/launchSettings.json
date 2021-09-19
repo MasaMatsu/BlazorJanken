@@ -20,7 +20,6 @@
     "MockApi": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "weatherforecast",
       "applicationUrl": "https://localhost:30373;http://localhost:33040",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
