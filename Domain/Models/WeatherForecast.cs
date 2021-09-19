@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MockApi
+namespace Domain.Models
 {
     public class WeatherForecast
     {
